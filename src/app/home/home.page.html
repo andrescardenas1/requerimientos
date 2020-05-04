@@ -1,20 +1,47 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header no-border >
+  <ion-toolbar color ="success">
     <ion-title>
-      Blank
+      Inicio
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-list>
+    <div class="">
+<ion-item>
+  <ion-input type="text" placeholder="Email" [(ngModel)]= "email_address"> </ion-input>
+</ion-item>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-item>
+  <ion-input type="password" placeholder="Password" [(ngModel)]= "password"> </ion-input>
+</ion-item>
+<ion-button expand="full" class="ino-padding" color="success" (click)="trylogin()"> Iniciar Sesion </ion-button>
+</div>
+
+<p class="ion-padding" info-1>
+  bienvenidos a la aplicacion financiera que revolicionara al mundo. 
+  nos alegramos que nos hayan escogido a nosotros, click <span (click)="openRegistrar()">Registrar ahora</span>
+</p>
+  </ion-list>
 </ion-content>
+
+
+<!-- <ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-title size="large">Blank</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-item>
+  <ion-label position="stacked">Usuario</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+  
+<ion-item>
+  <ion-label position="stacked">Login</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+
+<ion-button expand="block">Iniciar Sesion</ion-button>
+<ion-button expand="block">Registrar</ion-button> -->
